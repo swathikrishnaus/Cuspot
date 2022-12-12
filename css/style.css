@@ -1,0 +1,110 @@
+body{
+    font-size: 13px;
+    font-family: 'Poppins';
+}
+header{
+    background-color: #2E2873;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+    transition: 0.7s ease;
+}
+.navbar{
+    background-color: #2E2873;
+}
+.navbar .navbar-nav .nav-item .nav-link.active, .navbar .navbar-nav .nav-item .nav-link:focus, .navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #F27575;
+    font-weight: bold;
+}
+.navbar .login-link{
+    color: #F27575;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.navbar .login-link:hover, .navbar .login-link.active, .navbar .login-link:focus{
+    color: #e69494;
+}
+
+
+
+
+
+/* ----------------------------Common css start------------------------------- */
+
+
+.button-style{
+    background-color: #F27575;
+    border: 1px solid #F27575;
+    border-radius: 15px;
+    display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+    padding: 12px 20px;
+    color: white;
+}
+.button-style:focus, .button-style.active, .button-style:hover{
+    border: 1px solid #F27575;
+    background-color: transparent;
+    color: #F27575;
+    transform: translateY(-5px);
+}
+
+
+/* ----------------------------Common css end------------------------------- */
+
+
+
+
+/* ----------------------------home css start------------------------------- */
+
+.home{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.home-text-color{
+    color: #D6D4D4;
+}
+.home .home-texts{
+    margin-top: 50px;
+}
+.home .home-left-part .card{
+    width: 150px;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(68, 49, 151, 0.5);
+    color: #fff;
+    margin-left: 320px;
+    margin-top: -150px;
+}
+.home .home-right-part .card{
+    width: 150px;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(68, 49, 151, 0.5);
+    color: #fff;
+    margin-top: -100px;
+    margin-left: -50px;
+}
+
+/* ----------------------------home css end------------------------------- */
+
+
+
+/* ----------------------------about css start------------------------------- */
+
+.about{
+    margin-top: 150px;
+}
+.about img{
+    width: 400px;
+    height: auto;
+}
+
+/* ----------------------------about css end------------------------------- */
+
+
