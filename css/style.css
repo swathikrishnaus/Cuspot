@@ -24,6 +24,85 @@ header{
 .navbar .login-link:hover, .navbar .login-link.active, .navbar .login-link:focus{
     color: #e69494;
 }
+.navbar .dropdown-menu{
+    width: 100%;
+}
+
+
+
+/* ---------------------------------toggle button css start--------------------------------------- */
+
+
+
+.navbar-toggler {
+    border: 0 !important;
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+  
+  /* Lines of the Toggler */
+  .toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #e7e6e7;
+    display: block;
+    transition: all 0.2s;
+  }
+  
+  /* Adds Space between the lines */
+  .middle-bar{
+    margin: 5px auto;
+  }
+  
+  /* State when navbar is opened (START) */
+  .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+    transition: 0.7s ease;
+  }
+  
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: 0.7s ease;
+  }
+  
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+    transition: 0.7s ease;
+  }
+  /* State when navbar is opened (END) */
+  
+  /* State when navbar is collapsed (START) */
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+  
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
+  /* State when navbar is collapsed (END) */
+  
+  /* Color of Toggler when collapsed */
+  .navbar-toggler.collapsed .toggler-icon {
+    background-color: #ffffff;
+  }
+ 
+  
+  
+/* -------------------------------------------toggle button css end-------------------------------------------- */
 
 
 
@@ -67,6 +146,11 @@ header{
     width: 70%;
     margin: 0 auto;
 }
+@media(max-width: 991px){
+    .title-description{
+        width: 100%;
+    }
+}
 
 
 /* ----------------------------Common css end------------------------------- */
@@ -85,6 +169,7 @@ header{
 }
 .home .home-texts{
     margin-top: 50px;
+    
 }
 .home .home-left-part .card{
     width: 150px;
@@ -105,6 +190,14 @@ header{
     color: #fff;
     margin-top: -100px;
     margin-left: -50px;
+}
+@media(max-width: 991px){
+    .home .home-left-part .card{
+        margin: 0 auto;
+    }
+    .home .home-right-part .card{
+        margin: 0 auto;
+    }
 }
 
 /* ----------------------------home css end------------------------------- */
@@ -147,6 +240,21 @@ header{
 }
 .about .check-point p{
     margin-top: 4px;
+}
+@media(max-width: 991px){
+    .about{
+        padding: 10px;
+        margin-top: 70px;
+    }
+    .about-sub-head{
+        margin-top: 30px;
+    }
+    .about .about-desciption{
+        width: 100%;
+    }
+    .about .check-point{
+        margin: 0 auto;
+    }
 }
 
 /* ----------------------------about css end------------------------------- */
@@ -232,10 +340,12 @@ header{
     border-radius: 50%;
     background-color: #E5C394;
 }
-.courses .carousel-indicators button:active{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+@media(max-width: 991px){
+    .courses{
+        margin-top: 70px;
+        padding: 10px;
+
+    }
 }
 
 /* ----------------------------courses css end------------------------------- */
@@ -266,6 +376,12 @@ header{
     height: auto;
     border-radius: 50%;
 }
+@media(max-width: 991px){
+    .instructors{
+        margin-top: 70px;
+        padding: 10px;
+    }
+}
 
 /* ----------------------------instructors css end------------------------------- */
 
@@ -280,10 +396,315 @@ header{
 .blog .card{
     border: 0;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: 10px;
+    margin: 0 auto;
 }
 .blog .card img{
     border-radius: 10px;
 }
+.blog .card .view-more{
+    text-decoration: none;
+    color: #2E2873;
+    transition: 0.3s ease;
+}
+.blog .card .view-more:hover{
+    color: #9c96dd;
+}
+.blog .blog-cards{
+    margin-top: 50px;
+}
+.blog .actions{
+    justify-content: center;
+}
+.blog .card i{
+    margin-top: 3px;
+}
+.blog .card h6{
+    margin: 0 auto;
+}
+.blog .card  a{
+    text-decoration: none;
+
+}
+.blog .view-all{
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+}
+@media(max-width: 991px){
+    .blog{
+        margin-top: 70px;
+        padding: 10px;
+    }
+    .blog .card{
+        margin-top: 10px;
+    }
+}
 
 /* ----------------------------blog css end------------------------------- */
+
+
+
+
+/* ----------------------------testimonial css start------------------------------- */
+
+.testimonial{
+    margin-top: 150px;
+}
+.testimonial img{
+    width: 300px;
+    height: auto;
+    display: block;
+}
+.testimonial .card{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    margin-top: 150px;
+    margin-left: -40px;
+    padding: 15px;
+}
+.testimonial .card i{
+    font-size: 50px;
+    color: #2E2873;
+}
+.testimonial .client-words{
+    margin: 20px;
+}
+.testimonial .client-review{
+    margin-top: 50px;
+}
+.testimonial .carousel-indicators{
+    bottom: -80px;
+}
+.testimonial .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #2E2873;
+}
+@media(max-width: 991px){
+    .testimonial{
+        margin-top: 70px;
+        padding: 10px;
+    }
+    .testimonial .d-flex-image{
+        flex-wrap: wrap;
+        display: block;
+        margin: 0 auto;
+    }
+    .testimonial .card{
+        width: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+
+/* ----------------------------testimonial css end------------------------------- */
+
+
+
+
+
+/* ----------------------------contact css start------------------------------- */
+
+.contact{
+    margin-top: 200px;
+}
+.contact form{
+    width: 400px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 100px;
+}
+.contact form input, .contact form textarea {
+    background-color: #f3f5f7;
+    border-radius: 15px;
+    border: 0;
+    padding: 15px;
+}
+.contact form input::placeholder, .contact form textarea::placeholder{
+    font-size: 12px;
+}
+.contact form button{
+    background-color: #2E2873;
+    border: 1px solid #2E2873;
+}
+.contact form button:hover, .contact form button:focus, .contact form button.nav-link.active{
+    background-color: transparent;
+    color: #2E2873;
+    border: 1px solid #2E2873;
+}
+.contact .contact-form{
+    margin-top: 50px;
+}
+.contact .contact-image{
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.contact .social-media-icons a{
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+}
+.contact .social-media-icons img{
+    width: 33px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+.contact .bg{
+    background-color: #ebe9ff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.contact .social-link-bg{
+    border: 1px solid #2E2873;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    transition: 0.7s ease;
+    
+}
+.contact .social-link-bg i{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #2E2873;
+    /* display: inline-block; */
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+}
+.contact .social-link-bg:hover {
+    background-color: #2E2873;
+    transform: translateY(-5px);
+}
+.contact .social-link-bg:hover i{
+    color: white;
+}
+.contact .social-contact-icons{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.contact .social-contact-icons a{
+    text-decoration: none;
+}
+@media(max-width: 991px){
+    .contact{
+        padding: 10px;
+        margin-top: 150px;
+    }
+    .contact form{
+        margin: 0 auto;
+        width: auto;
+    }
+    .contact .social-media-icons{
+        flex-wrap: wrap;
+    }
+    .contact .social-media-icons .bg{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+
+/* ----------------------------contact css end------------------------------- */
+
+
+
+/* ----------------------------news-letter css start------------------------------- */
+
+.news-letter{
+    margin-top: 150px;
+    background-color: #F1F0FC;
+    padding: 50px;
+}
+.newsletter-description{
+    width: 60%;
+    margin: 0 auto;
+}
+.news-letter form{
+    margin: 0 auto;
+    justify-content: center;
+}
+.news-letter form .input-group input{
+    border: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: 20px;
+}
+.news-letter form input::placeholder{
+    font-size: 12px;
+}
+.news-letter .input-group{
+    width: 700px;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 20px;
+}
+.news-letter form button{
+    background-color: #F27575;
+    color: white;
+    border: 0;
+}
+@media(max-width: 991px){
+    .news-letter{
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        margin-top: 70px;
+    }
+    .news-letter .input-group{
+        width: auto;
+    }
+    .newsletter-description{
+        width: 100%;
+    }
+}
+
+/* ----------------------------news-letter css end------------------------------- */
+
+
+
+
+
+
+/* ----------------------------footer css start------------------------------- */
+
+.footer{
+    background-color: #0F0C34;
+    padding: 100px;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer .footer-links a{
+    color: #c7c1c1;
+    transition: 0.3s ease;
+}
+.footer .footer-links a:hover{
+    color: #ffffff;
+}
+@media(max-width: 991px){
+
+    .footer h6{
+        margin-top: 20px;
+    }
+}
+
+/* ----------------------------footer css end------------------------------- */
 
