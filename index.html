@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <title>Cuspot</title>
   </head>
@@ -20,53 +21,104 @@
     <!-- ---------------------Navbar start------------------------- -->
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light p-3 fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="index.html"><img src="images/Cuspot logo.png" alt="navbar logo"></a>
-              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="toggler-icon top-bar"></span>
-                <span class="toggler-icon middle-bar"></span>
-                <span class="toggler-icon bottom-bar"></span>
-              </button>
+      <nav class="navbar navbar-expand-lg navbar-light p-3 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="images/Cuspot logo.png" alt="navbar logo"></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">About</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Courses
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Instructor</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                </ul>
-                  <a href="" class="me-3 login-link" >Login</a>
-                  <button class="btn-sm button-style fw-bold" type="submit" >Register</button>
-              </div>
-            </div>
-          </nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="mega-drop-down nav-item d-none d-md-block"><a href="courses.html" class="nav-link"> Courses <span class="glyphicon glyphicon-triangle-bottom"></span>
+               </a>
+                <div class="animated fadeIn mega-menu">
+                  <div class="mega-menu-wrap">
+                    <div class="row">
+                    <div class="col-md-4">
+                      <!-- <h4 class="row mega-title">Feature</h4> -->
+                        <img class="img-fluid me-4 megamenu-image" src="images/megamenu image.jpg">
+                      </div>
+                      <div class="col-md-2 ">
+                          <h4 class="row mega-title  text-white">Gradutaion</h4>
+                        <ul class="stander megamenu-links">
+                          <li><a href="#">BCA</a></li>
+                          <li><a href="#">BA Malayalam</a></li>
+                          <li><a href="#">BA English</a></li>
+                          <li><a href="#">B. Com</a></li>
+                          <li><a href="#">BSC Maths</a></li>
+                          <li><a href="#">BSC Physics</a></li>
+                          <li><a href="#">BSC Chemistry</a></li>
+                          <li><a href="#">BSC Zoology</a></li>
+                          <li><a class="view-more btn- btn-sm" href="#">View more</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h4 class="row mega-title text-white">Post Gradutaion</h4>
+                        <ul class="description">
+                          <li><a href="#">MA Malayalam</a></li>
+                          <li><a href="#">MSC Physics</a></li>
+                          <li><a href="#">MSC Chemistry</a></li>
+                          <li><a href="#">M. Com</a></li>
+                          <li><a href="#">MSC Maths</a></li>
+                          <li><a href="#">MBA English</a></li>
+                          <li><a href="#">MCA</a></li>
+                          <li><a class="view-more btn btn-sm " href="#">View more</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-3">
+                      <h4 class="row mega-title text-white">Diploma</h4>
+                        <ul class="icon-des">
+                          <li><a href="#">Diploma in Computer Engineering</a></li>
+                          <li><a href="#">Diploma in Civil Engineering</a></li>
+                          <li><a href="#">Diploma in Chemical Engineering</a></li>
+                          <li><a href="#">Diploma in Digital Marketing</a></li>
+                          <li><a href="#">Diploma in Automobile Engineering</a></li>
+                          <li><a href="#">Diploma in Graphic Designing</a></li>
+                          <li><a href="#">Diploma in Electronics Engineering</a></li>
+                          <li><a class="view-more btn btn-sm " href="#">View more</a></li>
+                        </ul>
+                      </div>
+                      
+                    </div>
+                  </div>	
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Instructor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+              <a href="" class="me-3 login-link" >Login</a>
+              <button class="btn-sm button-style fw-bold" type="submit" >Register</button>
+          </div>
+        </div>
+      </nav>
           
           
 
           <section class="home">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 home-left-part">
+                    <div class="col-lg-4 home-left-part order-2 order-md-1">
                         <img src="images/home img 1.png" alt="home-image" class="img-fluid">
                         <div class="card">
                             <div class="card-body">
@@ -76,14 +128,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 home-texts">
+                    <div class="col-lg-4 home-texts  order-1 order-md-2">
                         <h1 class="text-white fw-bold text-center mt-5">Lorem ipsum dolor sit amet, consectetur </h1>
                         <p class="home-text-color text-center mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sodales tellus. Morbi i</p>
                         <div class="text-center">
                             <button class="btn-sm button-style mt-3 fw-bold">Get Started</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 home-right-part">
+                    <div class="col-lg-4 home-right-part   order-0 order-md-3 ">
                         <img src="images/home img 2.png" alt="home-image" class="img-fluid">
                         <div class="card">
                             <div class="card-body">
@@ -841,7 +893,7 @@
            
           <form class="mt-5">
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="button-addon2">
               <button class="btn " type="button" id="button-addon2">Subscribe</button>
             </div>
           </form>

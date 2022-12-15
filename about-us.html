@@ -12,117 +12,247 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <title>Cuspot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <title>About</title>
   </head>
   <body>
 
-    <!-- ---------------------Navbar start------------------------- -->
+   <!-- ---------------------Navbar start------------------------- -->
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light p-3 fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="index.html"><img src="images/Cuspot logo.png" alt="navbar logo"></a>
-              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="toggler-icon top-bar"></span>
-                <span class="toggler-icon middle-bar"></span>
-                <span class="toggler-icon bottom-bar"></span>
-              </button>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light p-3 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="images/Cuspot logo.png" alt="navbar logo"></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">About</a>
-                  </li>
-                  <li class="nav-item dropdown-link">
-                    <a class="nav-link " href="#" >Courses</a>
-                    <ul class="dropdown-content" aria-labelledby="navbarDropdown">
-                      <div class="row">
-                        <div class="column">
-                          <h3>Category 1</h3>
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                        <div class="column">
-                          <h3>Category 2</h3>
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                        <div class="column">
-                          <h3>Category 3</h3>
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Instructor</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                </ul>
-                  <a href="" class="me-3 login-link" >Login</a>
-                  <button class="btn-sm button-style fw-bold" type="submit" >Register</button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="mega-drop-down nav-item d-none d-md-block"><a href="courses.html" class="nav-link"> Courses  </a>
+                <div class="animated fadeIn mega-menu">
+                  <div class="mega-menu-wrap">
+                    <div class="row">
+                    <div class="col-md-4">
+                      <!-- <h4 class="row mega-title">Feature</h4> -->
+                        <img class="img-fluid me-4 megamenu-image" src="images/megamenu image.jpg">
+                      </div>
+                      <div class="col-md-2 ">
+                          <h4 class="row mega-title  text-white">Gradutaion</h4>
+                        <ul class="stander megamenu-links">
+                          <li><a href="#">BCA</a></li>
+                          <li><a href="#">BA Malayalam</a></li>
+                          <li><a href="#">BA English</a></li>
+                          <li><a href="#">B. Com</a></li>
+                          <li><a href="#">BSC Maths</a></li>
+                          <li><a href="#">BSC Physics</a></li>
+                          <li><a href="#">BSC Chemistry</a></li>
+                          <li><a href="#">BSC Zoology</a></li>
+                          <li><a class="view-more btn- btn-sm" href="#">View more</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h4 class="row mega-title text-white">Post Gradutaion</h4>
+                        <ul class="description">
+                          <li><a href="#">MA Malayalam</a></li>
+                          <li><a href="#">MSC Physics</a></li>
+                          <li><a href="#">MSC Chemistry</a></li>
+                          <li><a href="#">M. Com</a></li>
+                          <li><a href="#">MSC Maths</a></li>
+                          <li><a href="#">MBA English</a></li>
+                          <li><a href="#">MCA</a></li>
+                          <li><a class="view-more btn btn-sm " href="#">View more</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-3">
+                      <h4 class="row mega-title text-white">Diploma</h4>
+                        <ul class="icon-des">
+                          <li><a href="#">Diploma in Computer Engineering</a></li>
+                          <li><a href="#">Diploma in Civil Engineering</a></li>
+                          <li><a href="#">Diploma in Chemical Engineering</a></li>
+                          <li><a href="#">Diploma in Digital Marketing</a></li>
+                          <li><a href="#">Diploma in Automobile Engineering</a></li>
+                          <li><a href="#">Diploma in Graphic Designing</a></li>
+                          <li><a href="#">Diploma in Electronics Engineering</a></li>
+                          <li><a class="view-more btn btn-sm " href="#">View more</a></li>
+                        </ul>
+                      </div>
+                      
+                    </div>
+                  </div>	
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Instructor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+              <a href="" class="me-3 login-link" >Login</a>
+              <button class="btn-sm button-style fw-bold" type="submit" >Register</button>
+          </div>
+        </div>
+      </nav>
+      
+      
+
+      <section class="about-us">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 about-us-page-description ">
+                  <div class="d-flex small-head">
+                    <h6 class="text-white fw-bold text-center me-3">About Us</h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen text-white" viewBox="0 0 16 16">
+                      <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                    </svg>
+                  </div>
+                <h3 class="fw-bold text-white text-center mt-2">All the Info About US</h3>
+                <!-- <p class="blue-bg-para-color title-description mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sodales tellus. Morbi interdum dui a nisi maximus, non pretium urna lobortis. Fusce vitae facilisis sem. Nullam lobortis velit at tristique venenatis. Fusce sit amet ullamcorper risus, eu convallis est.</p> -->
+                    <p class="blue-bg-para-color mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium volutpat pharetra. Morbi eu laoreet magna. Suspendisse tincidunt quam mollis, imperdiet eros ac, euismod elit. Duis vulputate leo est, vitae tincidunt sem fringilla sed. Sed accumsan tincidunt ante, eget pharetra tortor. Nulla erat ex, fermentum sed finibus sit amet, convallis eget libero. Suspendisse a neque pulvinar, malesuada elit et, efficitur odio.</p>
+                    <p class="blue-bg-para-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium volutpat pharetra. Morbi eu laoreet magna. Suspendisse tincidunt quam mollis, imperdiet eros ac, euismod elit. Duis vulputate leo est, vitae tincidunt sem fringilla sed. Sed accumsan tincidunt ante, eget pharetra tortor. </p>
+                  </div>
+
+                <div class="col-lg-6">
+                  <img src="images/about page/about-us image.png" alt="about page image" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+      </section>
+</header>
+
+<!-- ---------------------Navbar end------------------------- -->
+
+
+
+
+    <!-- ---------------------story start------------------------- -->
+
+    <section class="story">
+      <div class="container">
+        <h3 class="fw-bold blue-color text-center mt-2">Our Story Begins Here</h3>
+        <p class="para-color title-description mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sodales tellus. Morbi interdum dui a nisi maximus, non pretium urna lobortis. Fusce vitae facilisis sem. Nullam lobortis velit at tristique venenatis. Fusce sit amet ullamcorper risus, eu convallis est.</p>
+
+        <div class="story-begins">
+          <div class="row">
+
+            <div class="col-lg-4 story-steps">
+              <div class="steps margin-top">
+                <img src="images/about page/1.png" alt="story image 1" class="img-fluid">
+                <div class="number-bg  mb-2">
+                  <h5 class="text-white text-center ">1</h5>
+                </div>
+                <p class="para-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium volutpat pharetra. Morbi eu laoreet magna. Suspendisse tincidunt quam mollis.</p>
               </div>
             </div>
-          </nav>
-          
-          
 
-          <section class="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 home-left-part">
-                        <img src="images/home img 1.png" alt="home-image" class="img-fluid">
-                        <div class="card">
-                            <div class="card-body">
-                              <h5 class="card-title text-center home-text-color fw-bold">2K+</h5>
-                              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                              <p class="card-text text-center home-text-color">Students</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 home-texts">
-                        <h1 class="text-white fw-bold text-center mt-5">Lorem ipsum dolor sit amet, consectetur </h1>
-                        <p class="home-text-color text-center mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sodales tellus. Morbi i</p>
-                        <div class="text-center">
-                            <button class="btn-sm button-style mt-3 fw-bold">Get Started</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 home-right-part">
-                        <img src="images/home img 2.png" alt="home-image" class="img-fluid">
-                        <div class="card">
-                            <div class="card-body">
-                              <p class="card-text text-center home-text-color">Lorem ipsum <br> dolor</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
+            <div class="col-lg-4 story-steps">
+              <div class="steps">
+                <img src="images/about page/2.png" alt="story image 1" class="img-fluid">
+                <div class="number-bg mb-2">
+                  <h5 class="text-white text-center ">2</h5>
+                </div>
+                <p class="para-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium volutpat pharetra. Morbi eu laoreet magna. Suspendisse tincidunt quam mollis.</p>
+              </div>
             </div>
-          </section>
-    </header>
 
-    <!-- ---------------------Navbar end------------------------- -->
+            <div class="col-lg-4 story-steps">
+              <div class="steps margin-top">
+                <img src="images/about page/3.png" alt="story image 1" class="img-fluid">
+                <div class="number-bg mb-2">
+                  <h5 class="text-white text-center ">3</h5>
+                </div>
+                <p class="para-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium volutpat pharetra. Morbi eu laoreet magna. Suspendisse tincidunt quam mollis.</p>
+              </div>
+            </div>
+
+          </div>
 
 
+          <div class="row">
 
+            <div class="col-lg-2"></div>
 
-    <!-- ---------------------about-us start------------------------- -->
+            <div class="col-lg-4  story-steps">
+              <div class="steps">
+                <img src="images/about page/4.png" alt="story image 1" class="img-fluid">
+                <div class="number-bg  mb-2">
+                  <h5 class="text-white text-center ">4</h5>
+                </div>
+                <p class="para-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium volutpat pharetra. Morbi eu laoreet magna. Suspendisse tincidunt quam mollis.</p>
+              </div>
+            </div>
 
-    <section class="about-us">
-      <div class="container">
-        
+            <div class="col-lg-4 story-steps">
+              <div class="steps">
+                <img src="images/about page/5.png" alt="story image 1" class="img-fluid">
+                <div class="number-bg mb-2">
+                  <h5 class="text-white text-center ">5</h5>
+                </div>
+                <p class="para-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium volutpat pharetra. Morbi eu laoreet magna. Suspendisse tincidunt quam mollis.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2"></div>
+
+        </div>
+
       </div>
     </section>
 
     <!-- ---------------------about-us end------------------------- -->
 
+
+
+
+    <!-- ---------------------join-us start------------------------- -->
+
+    <section class="join-us">
+      <div class="container">
+        <h3 class="fw-bold blue-color text-center mt-2">Our Story Begins Here</h3>
+        <p class="para-color title-description mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sodales tellus. Morbi interdum dui a nisi maximus, non pretium urna lobortis. Fusce vitae facilisis sem. Nullam lobortis velit at tristique venenatis. Fusce sit amet ullamcorper risus, eu convallis est.</p>
+          <div class="points mt-4">
+            <div class="d-flex check-point">
+              <span class="bi bi-check-circle-fill me-3 active"></span>
+              <p class="para-color ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sodales tellus. Morbi interdum dui a nisi maximus, non pretium urna lobortis. </p>
+            </div>
+            <div class="d-flex check-point">
+              <span class="bi bi-check-circle-fill me-3"></span>
+              <p class="para-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sodales tellus. Morbi interdum dui a nisi maximus</p>
+            </div>
+            <div class="d-flex check-point">
+              <span class="bi bi-check-circle-fill me-3"></span>
+              <p class="para-color ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sodales tellus. Morbi interdum dui a nisi maximus</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-3">
+            <button class="button-style btn-sm fw-bold login-button me-3">Login</button>
+            <button class="button-style btn-sm fw-bold register-button">Register</button>
+          </div>
+      </div>
+    </section>
+
+    <!-- ---------------------join-us end------------------------- -->
 
 
 
@@ -135,7 +265,7 @@
            
           <form class="mt-5">
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="button-addon2">
               <button class="btn " type="button" id="button-addon2">Subscribe</button>
             </div>
           </form>
