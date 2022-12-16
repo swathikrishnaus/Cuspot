@@ -13,7 +13,7 @@ ul{
 	margin: 0;
 	padding: 0;
 }
-.navbar a, .navbar a:hover, .navbar a.active, .navbar a:active, .navbar a:visited, .navbar a:focus{
+.navbar a{
 	color:#fefefe;
 	text-decoration:none;
 }
@@ -385,12 +385,12 @@ header{
     font-weight: bold;
 }
 .navbar .login-link{
-    color: #F27575;
+    color: #ffffff;
     text-decoration: none;
     transition: 0.5s ease;
 }
 .navbar .login-link:hover, .navbar .login-link.active, .navbar .login-link:focus{
-    color: #e69494;
+    color: #F27575;
 }
 .navbar .dropdown-menu{
     width: 100%;
@@ -776,7 +776,9 @@ header{
 .courses{
     margin-top: 150px;
 }
-
+.courses-row{
+    margin: 20px;
+}
 .courses .img-bg{
     border-radius: 10px;
 }
@@ -854,6 +856,9 @@ header{
         margin-top: 70px;
         padding: 10px;
 
+    }
+    .courses-row{
+        margin: 10px;
     }
 }
 
@@ -967,14 +972,15 @@ header{
     display: block;
 }
 .testimonial .card{
-    width: 100%;
+    width: 70%;
     height: 100%;
     border: 0;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-    margin-top: 150px;
+    margin-top: 130px;
     margin-left: -40px;
     padding: 15px;
+    
 }
 .testimonial .card i{
     font-size: 50px;
@@ -987,7 +993,7 @@ header{
     margin-top: 50px;
 }
 .testimonial .carousel-indicators{
-    bottom: -80px;
+    bottom: -85px;
 }
 .testimonial .carousel-indicators button{
     width: 15px;
@@ -1007,8 +1013,8 @@ header{
     }
     .testimonial .card{
         width: auto;
-        margin: 0 auto;
-        margin-top: 10px;
+        margin: 10px;
+        /* margin-top: 10px; */
     }
 }
 
